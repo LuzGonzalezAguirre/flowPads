@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- =============================================
+       META & CONFIGURACIÓN BÁSICA
+       ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Puff & Paw – Cosmética natural para perros. Perfumes botánicos, bálsamos reparadores y kits de bienestar 100% naturales." />
+  <title>Puff & Paw – Bienestar Natural Canino</title>
+
+  <!-- =============================================
+       GOOGLE FONTS
+       Playfair Display → títulos
+       Inter → cuerpo de texto
+       ============================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- =============================================
+       ESTILOS PRINCIPALES
+       ============================================= -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       TOP BAR – Barra superior de información
+       ============================================= -->
+  <div class="topbar" role="banner">
+    <div class="container">
+      <p class="topbar__text" data-es="🌿 Envío gratis en pedidos mayores a $499 MXN · 100% Natural · Libre de crueldad" data-en="🌿 Free shipping on orders over $499 MXN · 100% Natural · Cruelty-free">
+        🌿 Envío gratis en pedidos mayores a $499 MXN · 100% Natural · Libre de crueldad
+      </p>
+    </div>
+  </div>
+
+  <!-- =============================================
+       HEADER / NAVBAR
+       Mobile: hamburguesa + menú desplegable
+       Desktop: logo izquierda, nav derecha
+       ============================================= -->
+  <header class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="navbar__logo" aria-label="Puff & Paw – Inicio">
+        <!-- Reemplazar con /assets/images/logo.png -->
+        <div class="image-placeholder image-placeholder--logo" aria-hidden="true">
+          <span class="navbar__logo-text">Puff <span>&</span> Paw</span>
+        </div>
+      </a>
+
+      <!-- Nav links – desktop -->
+      <nav class="navbar__nav" id="main-nav" aria-label="Menú principal">
+        <ul class="navbar__list">
+          <li><a class="navbar__link" href="#sobre" data-es="Nosotros" data-en="About">Nosotros</a></li>
+          <li><a class="navbar__link" href="#productos" data-es="Productos" data-en="Products">Productos</a></li>
+          <li><a class="navbar__link" href="#beneficios" data-es="Beneficios" data-en="Benefits">Beneficios</a></li>
+          <li><a class="navbar__link" href="#ingredientes" data-es="Ingredientes" data-en="Ingredients">Ingredientes</a></li>
+          <li><a class="navbar__link" href="#testimoniales" data-es="Testimonios" data-en="Testimonials">Testimonios</a></li>
+          <li><a class="navbar__link" href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Controles derecha -->
+      <div class="navbar__controls">
+        <!-- Botón cambio de idioma -->
+        <button class="btn btn--lang" id="lang-toggle" aria-label="Cambiar idioma / Change language">
+          <span id="lang-label">ES | EN</span>
+        </button>
+        <!-- Botón CTA comprar -->
+        <a href="#productos" class="btn btn--primary navbar__cta" data-es="Comprar" data-en="Shop Now">Comprar</a>
+        <!-- Botón hamburguesa – mobile -->
+        <button class="navbar__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+          <span class="navbar__hamburger-line"></span>
+        </button>
+      </div>
+
+    </div><!-- /.container -->
+  </header><!-- /.navbar -->
+
+
+  <!-- =============================================
+       HERO – Sección principal
+       Mobile: columna única
+       Desktop: 2 columnas (texto | imagen)
+       ============================================= -->
+  <section class="hero section" id="inicio" aria-label="Sección principal">
+    <div class="container hero__inner">
+
+      <!-- Columna texto -->
+      <div class="hero__content fade-in">
+        <span class="hero__badge" data-es="🌿 100% Natural & Botánico" data-en="🌿 100% Natural & Botanical">🌿 100% Natural & Botánico</span>
+        <h1 class="hero__title" data-es="Bienestar Natural<br>para tu Mejor<br>Amigo" data-en="Natural Wellness<br>for Your Best<br>Friend">
+          Bienestar Natural<br>para tu Mejor<br>Amigo
+        </h1>
+        <p class="hero__subtitle" data-es="Cosmética botánica de triple acción: relaja, desodoriza y repele. Formulada con amor para el olfato y la piel más sensibles." data-en="Triple-action botanical cosmetics: relax, deodorize, and repel. Lovingly formulated for the most sensitive skin and noses.">
+          Cosmética botánica de triple acción: relaja, desodoriza y repele. Formulada con amor para el olfato y la piel más sensibles.
+        </p>
+        <div class="hero__ctas">
+          <a href="#productos" class="btn btn--primary btn--large" data-es="Descubrir productos" data-en="Discover products">Descubrir productos</a>
+          <a href="#sobre" class="btn btn--secondary btn--large" data-es="Nuestra historia" data-en="Our story">Nuestra historia</a>
+        </div>
+        <!-- Indicadores de confianza -->
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <span class="hero__trust-icon" aria-hidden="true">🐾</span>
+            <span data-es="Seguro si se lame" data-en="Safe if licked">Seguro si se lame</span>
+          </div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-icon" aria-hidden="true">🌱</span>
+            <span data-es="Libre de crueldad" data-en="Cruelty-free">Libre de crueldad</span>
+          </div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-icon" aria-hidden="true">♻️</span>
+            <span data-es="Empaque sostenible" data-en="Sustainable packaging">Empaque sostenible</span>
+          </div>
+        </div>
+      </div><!-- /.hero__content -->
+
+      <!-- Columna imagen -->
+      <div class="hero__visual fade-in">
+        <div class="hero__image-wrap">
+          <!-- Reemplazar con /assets/images/hero-main.jpg -->
+          <div class="image-placeholder image-placeholder--hero" aria-label="Imagen principal hero – perro feliz con productos Puff & Paw">
+            <span class="image-placeholder__icon" aria-hidden="true">🐶</span>
+            <span class="image-placeholder__label">hero-main.jpg</span>
+          </div>
+          <!-- Decoración flotante -->
+          <div class="hero__badge-float hero__badge-float--1" aria-hidden="true">
+            <span>✨</span>
+            <span data-es="Lavanda Relax" data-en="Lavender Relax">Lavanda Relax</span>
+          </div>
+          <div class="hero__badge-float hero__badge-float--2" aria-hidden="true">
+            <span>🐾</span>
+            <span data-es="Patitas Suaves" data-en="Soft Paws">Patitas Suaves</span>
+          </div>
+        </div>
+      </div><!-- /.hero__visual -->
+
+    </div><!-- /.container -->
+
+    <!-- Elemento decorativo wave -->
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-background)" />
+      </svg>
+    </div>
+
+  </section><!-- /.hero -->
+
+
+  <!-- =============================================
+       SOBRE LA MARCA – About section
+       ============================================= -->
+  <section class="section section--light about" id="sobre" aria-label="Sobre la marca">
+    <div class="container">
+
+      <div class="about__grid">
+
+        <!-- Imagen -->
+        <div class="about__image-col fade-in">
+          <div class="about__image-wrap">
+            <!-- Reemplazar con /assets/images/section-about.jpg -->
+            <div class="image-placeholder image-placeholder--about" aria-label="Imagen sobre la marca Puff & Paw">
+              <span class="image-placeholder__icon" aria-hidden="true">🌿</span>
+              <span class="image-placeholder__label">section-about.jpg</span>
+            </div>
+          </div>
+          <!-- Tarjeta misión flotante -->
+          <div class="about__mission-card fade-in">
+            <p class="about__mission-title" data-es="Nuestra Misión" data-en="Our Mission">Nuestra Misión</p>
+            <p class="about__mission-text" data-es="Bienestar real para cada perro, con la pureza que merece." data-en="Real wellness for every dog, with the purity they deserve.">
+              Bienestar real para cada perro, con la pureza que merece.
+            </p>
+          </div>
+        </div><!-- /.about__image-col -->
+
+        <!-- Contenido -->
+        <div class="about__content fade-in">
+          <span class="section__label" data-es="Sobre Puff & Paw" data-en="About Puff & Paw">Sobre Puff & Paw</span>
+          <h2 class="section__title" data-es="Nacimos para cuidar lo que amas" data-en="Born to care for what you love">
+            Nacimos para cuidar lo que amas
+          </h2>
+          <p class="about__text" data-es="Puff &amp; Paw nació de una observación sencilla: el mundo es un lugar muy rudo para los sentidos de un perro. El olfato de nuestros amigos peludos es miles de veces más sensible y sus almohadillas enfrentan superficies extremas a diario." data-en="Puff &amp; Paw was born from a simple observation: the world is a harsh place for a dog's senses. Our furry friends' sense of smell is thousands of times more sensitive, and their paws face extreme surfaces every day.">
+            Puff &amp; Paw nació de una observación sencilla: el mundo es un lugar muy rudo para los sentidos de un perro. El olfato de nuestros amigos peludos es miles de veces más sensible y sus almohadillas enfrentan superficies extremas a diario.
+          </p>
+          <p class="about__text" data-es="Nos sumergimos en el mundo de la botánica y la aromaterapia para encontrar ingredientes que la naturaleza ya nos ofrecía: lavanda para calmar la ansiedad, aceites esenciales para repeler insectos de forma segura y ceras vegetales para sanar." data-en="We dove into the world of botany and aromatherapy to find ingredients nature already provided: lavender to soothe anxiety, essential oils to safely repel insects, and plant-based waxes to heal.">
+            Nos sumergimos en el mundo de la botánica y la aromaterapia para encontrar ingredientes que la naturaleza ya nos ofrecía: lavanda para calmar la ansiedad, aceites esenciales para repeler insectos de forma segura y ceras vegetales para sanar.
+          </p>
+          <!-- Puntos únicos -->
+          <ul class="about__features">
+            <li class="about__feature">
+              <span class="about__feature-icon" aria-hidden="true">🌺</span>
+              <div>
+                <strong data-es="Fórmulas 100% Naturales" data-en="100% Natural Formulas">Fórmulas 100% Naturales</strong>
+                <p data-es="Aceites esenciales, ceras vegetales y extractos botánicos de grado terapéutico." data-en="Therapeutic-grade essential oils, plant-based waxes, and botanical extracts.">Aceites esenciales, ceras vegetales y extractos botánicos de grado terapéutico.</p>
+              </div>
+            </li>
+            <li class="about__feature">
+              <span class="about__feature-icon" aria-hidden="true">💚</span>
+              <div>
+                <strong data-es="Compromiso con la Salud" data-en="Health Commitment">Compromiso con la Salud</strong>
+                <p data-es="Todos nuestros productos son seguros incluso si son lamidos por la mascota." data-en="All our products are non-toxic and safe even if licked by your pet.">Todos nuestros productos son seguros incluso si son lamidos por la mascota.</p>
+              </div>
+            </li>
+            <li class="about__feature">
+              <span class="about__feature-icon" aria-hidden="true">♻️</span>
+              <div>
+                <strong data-es="Conciencia Ambiental" data-en="Environmental Awareness">Conciencia Ambiental</strong>
+                <p data-es="Empaques duraderos y reciclables, minimizando nuestra huella de carbono." data-en="Durable and recyclable packaging, minimizing our carbon footprint.">Empaques duraderos y reciclables, minimizando nuestra huella de carbono.</p>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.about__content -->
+
+      </div><!-- /.about__grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.about -->
+
+
+  <!-- =============================================
+       PRODUCTOS – 3 cards de productos
+       ============================================= -->
+  <section class="section products" id="productos" aria-label="Nuestros productos">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <span class="section__label" data-es="Nuestra Línea" data-en="Our Line">Nuestra Línea</span>
+        <h2 class="section__title" data-es="Productos diseñados con amor" data-en="Products designed with love">
+          Productos diseñados con amor
+        </h2>
+        <p class="section__subtitle" data-es="Cada fórmula, pensada para el bienestar real de tu perro." data-en="Every formula, crafted for your dog's real wellness.">
+          Cada fórmula, pensada para el bienestar real de tu perro.
+        </p>
+      </div>
+
+      <!-- Grid de 3 productos -->
+      <div class="grid grid--3 products__grid">
+
+        <!-- Producto 1: Perfume -->
+        <article class="card product-card fade-in" aria-label="Perfume Canino Triple Acción">
+          <div class="card__image-wrap">
+            <!-- Reemplazar con /assets/images/product-perfume.jpg -->
+            <div class="image-placeholder image-placeholder--product" aria-label="Perfume Canino Triple Acción">
+              <span class="image-placeholder__icon" aria-hidden="true">🌸</span>
+              <span class="image-placeholder__label">product-perfume.jpg</span>
+            </div>
+            <span class="product-card__badge" data-es="Más vendido" data-en="Best seller">Más vendido</span>
+          </div>
+          <div class="card__body">
+            <span class="product-card__category" data-es="Aromaterapia · 100ml" data-en="Aromatherapy · 100ml">Aromaterapia · 100ml</span>
+            <h3 class="product-card__title" data-es="Perfume Canino Triple Acción" data-en="Triple-Action Canine Perfume">
+              Perfume Canino Triple Acción
+            </h3>
+            <p class="product-card__desc" data-es="Spray de triple acción: relaja con lavanda, desodoriza el pelaje y repele pulgas con citronela y cedro. Base de agua destilada y aceites de grado terapéutico." data-en="Triple-action spray: relaxes with lavender, deodorizes the coat, and repels fleas with citronella and cedar. Distilled water base with therapeutic-grade oils.">
+              Spray de triple acción: relaja con lavanda, desodoriza el pelaje y repele pulgas con citronela y cedro. Base de agua destilada y aceites de grado terapéutico.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$199 MXN</span>
+              <button
+                class="btn btn--primary product-card__btn"
+                data-es="Comprar"
+                data-en="Buy now"
+                aria-label="Comprar Perfume Canino Triple Acción"
+                data-product="Perfume Canino Triple Acción"
+                data-price="$199 MXN"
+                onclick="openModal(this)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </article><!-- /.product-card -->
+
+        <!-- Producto 2: Bálsamo -->
+        <article class="card product-card fade-in" aria-label="Bálsamo Protector Patitas Suaves">
+          <div class="card__image-wrap">
+            <!-- Reemplazar con /assets/images/product-balm.jpg -->
+            <div class="image-placeholder image-placeholder--product" aria-label="Bálsamo Protector Patitas Suaves">
+              <span class="image-placeholder__icon" aria-hidden="true">🐾</span>
+              <span class="image-placeholder__label">product-balm.jpg</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <span class="product-card__category" data-es="Hidratación · 30g" data-en="Hydration · 30g">Hidratación · 30g</span>
+            <h3 class="product-card__title" data-es='Bálsamo "Patitas Suaves"' data-en='"Soft Paws" Balm'>
+              Bálsamo "Patitas Suaves"
+            </h3>
+            <p class="product-card__desc" data-es="Bálsamo protector y reparador de almohadillas y nariz. Cera de abeja, aceite de coco, manteca de karité y lavanda. Crea barrera, hidrata y sana grietas." data-en="Protective and restorative balm for paws and nose. Beeswax, coconut oil, shea butter, and lavender. Creates a barrier, moisturizes, and heals cracks.">
+              Bálsamo protector y reparador de almohadillas y nariz. Cera de abeja, aceite de coco, manteca de karité y lavanda. Crea barrera, hidrata y sana grietas.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$199 MXN</span>
+              <button
+                class="btn btn--primary product-card__btn"
+                data-es="Comprar"
+                data-en="Buy now"
+                aria-label='Comprar Bálsamo Patitas Suaves'
+                data-product='Bálsamo "Patitas Suaves"'
+                data-price="$199 MXN"
+                onclick="openModal(this)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </article><!-- /.product-card -->
+
+        <!-- Producto 3: Kit -->
+        <article class="card product-card fade-in" aria-label="Kit Bienestar Completo">
+          <div class="card__image-wrap">
+            <!-- Reemplazar con /assets/images/product-kit.jpg -->
+            <div class="image-placeholder image-placeholder--product" aria-label="Kit Bienestar Completo Puff & Paw">
+              <span class="image-placeholder__icon" aria-hidden="true">🎁</span>
+              <span class="image-placeholder__label">product-kit.jpg</span>
+            </div>
+            <span class="product-card__badge product-card__badge--green" data-es="Ahorra 15%" data-en="Save 15%">Ahorra 15%</span>
+          </div>
+          <div class="card__body">
+            <span class="product-card__category" data-es="Kit Completo · Perfume + Bálsamo" data-en="Full Kit · Perfume + Balm">Kit Completo · Perfume + Bálsamo</span>
+            <h3 class="product-card__title" data-es="Kit Bienestar Puff & Paw" data-en="Puff & Paw Wellness Kit">
+              Kit Bienestar Puff &amp; Paw
+            </h3>
+            <p class="product-card__desc" data-es="El dúo perfecto para el cuidado integral de tu perro. Perfume Triple Acción + Bálsamo Patitas Suaves. El regalo ideal para los amantes de las mascotas." data-en="The perfect duo for your dog's complete care. Triple-Action Perfume + Soft Paws Balm. The ideal gift for pet lovers.">
+              El dúo perfecto para el cuidado integral de tu perro. Perfume Triple Acción + Bálsamo Patitas Suaves. El regalo ideal para los amantes de las mascotas.
+            </p>
+            <div class="product-card__footer">
+              <div>
+                <span class="product-card__price">$339 MXN</span>
+                <span class="product-card__price-old">$398 MXN</span>
+              </div>
+              <button
+                class="btn btn--primary product-card__btn"
+                data-es="Comprar"
+                data-en="Buy now"
+                aria-label="Comprar Kit Bienestar Puff & Paw"
+                data-product="Kit Bienestar Puff & Paw"
+                data-price="$339 MXN"
+                onclick="openModal(this)"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </article><!-- /.product-card -->
+
+      </div><!-- /.grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.products -->
+
+
+  <!-- =============================================
+       BENEFICIOS – Benefits section
+       ============================================= -->
+  <section class="section section--alt benefits" id="beneficios" aria-label="Beneficios de Puff & Paw">
+    <div class="container">
+
+      <div class="benefits__grid">
+
+        <!-- Imagen -->
+        <div class="benefits__image-col fade-in">
+          <div class="benefits__image-wrap">
+            <!-- Reemplazar con /assets/images/section-benefits.jpg -->
+            <div class="image-placeholder image-placeholder--benefits" aria-label="Beneficios de los productos Puff & Paw">
+              <span class="image-placeholder__icon" aria-hidden="true">🌸</span>
+              <span class="image-placeholder__label">section-benefits.jpg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenido beneficios -->
+        <div class="benefits__content fade-in">
+          <span class="section__label" data-es="¿Por qué elegirnos?" data-en="Why choose us?">¿Por qué elegirnos?</span>
+          <h2 class="section__title" data-es="Un cuidado que se siente diferente" data-en="Care that feels different">
+            Un cuidado que se siente diferente
+          </h2>
+
+          <div class="benefits__list">
+            <div class="benefit-item fade-in">
+              <div class="benefit-item__icon" aria-hidden="true">🌿</div>
+              <div class="benefit-item__body">
+                <h3 data-es="Enfoque Holístico" data-en="Holistic Approach">Enfoque Holístico</h3>
+                <p data-es="No solo huele bien: cuida el estado emocional de tu perro y lo protege naturalmente." data-en="Not just a good smell: it cares for your dog's emotional state and naturally protects them.">No solo huele bien: cuida el estado emocional de tu perro y lo protege naturalmente.</p>
+              </div>
+            </div>
+            <div class="benefit-item fade-in">
+              <div class="benefit-item__icon" aria-hidden="true">🛡️</div>
+              <div class="benefit-item__body">
+                <h3 data-es="Repelente Natural de Pulgas" data-en="Natural Flea Repellent">Repelente Natural de Pulgas</h3>
+                <p data-es="Citronela, cedro y vinagre de manzana trabajan juntos para mantener alejadas las pulgas." data-en="Citronella, cedar, and apple cider vinegar work together to keep fleas away.">Citronela, cedro y vinagre de manzana trabajan juntos para mantener alejadas las pulgas.</p>
+              </div>
+            </div>
+            <div class="benefit-item fade-in">
+              <div class="benefit-item__icon" aria-hidden="true">💆</div>
+              <div class="benefit-item__body">
+                <h3 data-es="Relaja la Ansiedad" data-en="Relieves Anxiety">Relaja la Ansiedad</h3>
+                <p data-es="La lavanda y la manzanilla tienen propiedades comprobadas para calmar a los perros ansiosos." data-en="Lavender and chamomile have proven properties to calm anxious dogs.">La lavanda y la manzanilla tienen propiedades comprobadas para calmar a los perros ansiosos.</p>
+              </div>
+            </div>
+            <div class="benefit-item fade-in">
+              <div class="benefit-item__icon" aria-hidden="true">🐾</div>
+              <div class="benefit-item__body">
+                <h3 data-es="Almohadillas Protegidas" data-en="Protected Paw Pads">Almohadillas Protegidas</h3>
+                <p data-es="El bálsamo crea una barrera protectora ante frío, calor y superficies extremas." data-en="The balm creates a protective barrier against cold, heat, and extreme surfaces.">El bálsamo crea una barrera protectora ante frío, calor y superficies extremas.</p>
+              </div>
+            </div>
+          </div><!-- /.benefits__list -->
+
+        </div><!-- /.benefits__content -->
+
+      </div><!-- /.benefits__grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.benefits -->
+
+
+  <!-- =============================================
+       CÓMO USAR – How to use section
+       ============================================= -->
+  <section class="section howto" id="como-usar" aria-label="Cómo usar nuestros productos">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <span class="section__label" data-es="Guía de uso" data-en="Usage guide">Guía de uso</span>
+        <h2 class="section__title" data-es="Fácil de aplicar, poderoso en resultados" data-en="Easy to apply, powerful in results">
+          Fácil de aplicar, poderoso en resultados
+        </h2>
+      </div>
+
+      <div class="grid grid--2 howto__grid">
+
+        <!-- Perfume -->
+        <div class="card howto__card fade-in">
+          <div class="howto__card-header">
+            <span class="howto__icon" aria-hidden="true">✨</span>
+            <h3 data-es="Perfume Triple Acción" data-en="Triple-Action Perfume">Perfume Triple Acción</h3>
+          </div>
+          <ol class="howto__steps">
+            <li data-es="Agita bien el frasco antes de cada uso." data-en="Shake the bottle well before each use.">Agita bien el frasco antes de cada uso.</li>
+            <li data-es="Rocía a 20 cm de distancia sobre el lomo y los costados." data-en="Spray from 20 cm away on the back and sides.">Rocía a 20 cm de distancia sobre el lomo y los costados.</li>
+            <li data-es="¡Evita los ojos, nariz, boca y orejas!" data-en="Avoid eyes, nose, mouth, and ears!">¡Evita los ojos, nariz, boca y orejas!</li>
+            <li data-es="Primera vez: prueba en una pata y espera 24 horas." data-en="First time: test on one paw and wait 24 hours.">Primera vez: prueba en una pata y espera 24 horas.</li>
+            <li data-es="Usa cada 2–3 días o antes de salir al parque." data-en="Use every 2–3 days or before going to the park.">Usa cada 2–3 días o antes de salir al parque.</li>
+          </ol>
+        </div>
+
+        <!-- Bálsamo -->
+        <div class="card howto__card fade-in">
+          <div class="howto__card-header">
+            <span class="howto__icon" aria-hidden="true">🐾</span>
+            <h3 data-es='Bálsamo "Patitas Suaves"' data-en='"Soft Paws" Balm'>Bálsamo "Patitas Suaves"</h3>
+          </div>
+          <ol class="howto__steps">
+            <li data-es="Asegúrate de que las patitas estén limpias y secas." data-en="Make sure the paws are clean and dry.">Asegúrate de que las patitas estén limpias y secas.</li>
+            <li data-es="Aplica una pequeña cantidad en cada almohadilla." data-en="Apply a small amount to each paw pad.">Aplica una pequeña cantidad en cada almohadilla.</li>
+            <li data-es="También puedes aplicar en la nariz si está reseca." data-en="You can also apply it to the nose if it's dry.">También puedes aplicar en la nariz si está reseca.</li>
+            <li data-es="Da un premio a tu perro para distraerlo 2 minutos." data-en="Give your dog a treat to distract them for 2 minutes.">Da un premio a tu perro para distraerlo 2 minutos.</li>
+            <li data-es="Úsalo en invierno para proteger del frío o en verano contra el calor del suelo." data-en="Use it in winter to protect from cold or in summer against hot surfaces.">Úsalo en invierno para proteger del frío o en verano contra el calor del suelo.</li>
+          </ol>
+        </div>
+
+      </div><!-- /.grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.howto -->
+
+
+  <!-- =============================================
+       INGREDIENTES – Ingredients section
+       ============================================= -->
+  <section class="section section--light ingredients" id="ingredientes" aria-label="Ingredientes naturales">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <span class="section__label" data-es="Lo que hay adentro" data-en="What's inside">Lo que hay adentro</span>
+        <h2 class="section__title" data-es="Ingredientes de la naturaleza, nada más" data-en="Ingredients from nature, nothing more">
+          Ingredientes de la naturaleza, nada más
+        </h2>
+        <p class="section__subtitle" data-es="Transparencia total: si no es seguro para ser lamido, no está en nuestra lista." data-en="Total transparency: if it's not safe to be licked, it's not on our list.">
+          Transparencia total: si no es seguro para ser lamido, no está en nuestra lista.
+        </p>
+      </div>
+
+      <div class="grid grid--3 ingredients__grid">
+
+        <div class="card ingredient-card fade-in">
+          <span class="ingredient-card__icon" aria-hidden="true">💜</span>
+          <h3 data-es="Lavanda" data-en="Lavender">Lavanda</h3>
+          <p data-es="Calma la ansiedad y el estrés. Aroma delicado y familiar para perros sensibles." data-en="Soothes anxiety and stress. Delicate, familiar scent for sensitive dogs.">Calma la ansiedad y el estrés. Aroma delicado y familiar para perros sensibles.</p>
+        </div>
+
+        <div class="card ingredient-card fade-in">
+          <span class="ingredient-card__icon" aria-hidden="true">🌼</span>
+          <h3 data-es="Manzanilla" data-en="Chamomile">Manzanilla</h3>
+          <p data-es="Propiedades antiinflamatorias y calmantes. Suave con la piel más delicada." data-en="Anti-inflammatory and calming properties. Gentle on the most delicate skin.">Propiedades antiinflamatorias y calmantes. Suave con la piel más delicada.</p>
+        </div>
+
+        <div class="card ingredient-card fade-in">
+          <span class="ingredient-card__icon" aria-hidden="true">🥥</span>
+          <h3 data-es="Aceite de Coco" data-en="Coconut Oil">Aceite de Coco</h3>
+          <p data-es="Hidratante, antibacterial natural. Ayuda a mezclar los aceites y da brillo al pelo." data-en="Moisturizing, natural antibacterial. Helps blend oils and adds shine to the coat.">Hidratante, antibacterial natural. Ayuda a mezclar los aceites y da brillo al pelo.</p>
+        </div>
+
+        <div class="card ingredient-card fade-in">
+          <span class="ingredient-card__icon" aria-hidden="true">🌿</span>
+          <h3 data-es="Citronela & Cedro" data-en="Citronella & Cedar">Citronela & Cedro</h3>
+          <p data-es="Repelen pulgas de forma 100% natural. Sin toxinas, efectivos y seguros." data-en="Repel fleas 100% naturally. No toxins, effective and safe.">Repelen pulgas de forma 100% natural. Sin toxinas, efectivos y seguros.</p>
+        </div>
+
+        <div class="card ingredient-card fade-in">
+          <span class="ingredient-card__icon" aria-hidden="true">🍯</span>
+          <h3 data-es="Cera de Abeja" data-en="Beeswax">Cera de Abeja</h3>
+          <p data-es="Base del bálsamo. Crea una barrera protectora y previene la pérdida de humedad." data-en="Balm base. Creates a protective barrier and prevents moisture loss.">Base del bálsamo. Crea una barrera protectora y previene la pérdida de humedad.</p>
+        </div>
+
+        <div class="card ingredient-card fade-in">
+          <span class="ingredient-card__icon" aria-hidden="true">🌱</span>
+          <h3 data-es="Manteca de Karité" data-en="Shea Butter">Manteca de Karité</h3>
+          <p data-es="Nutrición intensa para almohadillas agrietadas. Suaviza y regenera la piel dañada." data-en="Intense nutrition for cracked paw pads. Softens and regenerates damaged skin.">Nutrición intensa para almohadillas agrietadas. Suaviza y regenera la piel dañada.</p>
+        </div>
+
+      </div><!-- /.grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.ingredients -->
+
+
+  <!-- =============================================
+       DIFERENCIADORES – What makes us unique
+       ============================================= -->
+  <section class="section differentiators" id="diferenciadores" aria-label="Diferenciadores Puff & Paw">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <span class="section__label" data-es="Lo que nos hace únicos" data-en="What makes us unique">Lo que nos hace únicos</span>
+        <h2 class="section__title" data-es="Más que un producto, una filosofía" data-en="More than a product, a philosophy">
+          Más que un producto, una filosofía
+        </h2>
+      </div>
+
+      <div class="differentiators__grid fade-in">
+
+        <div class="diff-card">
+          <div class="diff-card__num" aria-hidden="true">01</div>
+          <h3 data-es="Olfato Respetado" data-en="Respected Sense of Smell">Olfato Respetado</h3>
+          <p data-es="Cada fórmula es cuidadosamente balanceada para ser efectiva pero gentil con el olfato 10,000x más sensible de tu perro." data-en="Every formula is carefully balanced to be effective yet gentle on your dog's 10,000x more sensitive sense of smell.">Cada fórmula es cuidadosamente balanceada para ser efectiva pero gentil con el olfato 10,000x más sensible de tu perro.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__num" aria-hidden="true">02</div>
+          <h3 data-es="Sin Crueldad" data-en="Cruelty-Free">Sin Crueldad</h3>
+          <p data-es="Nunca probamos en animales. Cada proceso es ético, transparente y respetuoso con todos los seres vivos." data-en="We never test on animals. Every process is ethical, transparent, and respectful of all living beings.">Nunca probamos en animales. Cada proceso es ético, transparente y respetuoso con todos los seres vivos.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__num" aria-hidden="true">03</div>
+          <h3 data-es="Triple Acción Real" data-en="Real Triple Action">Triple Acción Real</h3>
+          <p data-es="Un solo producto hace tres cosas: relaja, desodoriza y repele. Sin comprometer ninguna función." data-en="One product does three things: relaxes, deodorizes, and repels. Without compromising any function.">Un solo producto hace tres cosas: relaja, desodoriza y repele. Sin comprometer ninguna función.</p>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card__num" aria-hidden="true">04</div>
+          <h3 data-es="Apto si se Lame" data-en="Safe if Licked">Apto si se Lame</h3>
+          <p data-es="Transparencia total: si no podría estar en la lista de ingredientes comestibles, no está en nuestros productos." data-en="Total transparency: if it couldn't be on an edible ingredient list, it's not in our products.">Transparencia total: si no podría estar en la lista de ingredientes comestibles, no está en nuestros productos.</p>
+        </div>
+
+      </div><!-- /.differentiators__grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.differentiators -->
+
+
+  <!-- =============================================
+       TESTIMONIALES – Testimonials
+       ============================================= -->
+  <section class="section section--alt testimonials" id="testimoniales" aria-label="Testimonios de clientes">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <span class="section__label" data-es="Lo que dicen" data-en="What they say">Lo que dicen</span>
+        <h2 class="section__title" data-es="Perros felices, dueños contentos" data-en="Happy dogs, happy owners">
+          Perros felices, dueños contentos
+        </h2>
+      </div>
+
+      <div class="grid grid--3 testimonials__grid">
+
+        <article class="card testimonial-card fade-in">
+          <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-card__text" data-es='"Mi golden retriever era muy ansioso durante los paseos. Desde que uso el perfume, noto que está mucho más tranquilo. ¡El aroma a lavanda es precioso!"' data-en='"My golden retriever was very anxious during walks. Since I started using the perfume, I notice he is much calmer. The lavender scent is beautiful!"'>
+            "Mi golden retriever era muy ansioso durante los paseos. Desde que uso el perfume, noto que está mucho más tranquilo. ¡El aroma a lavanda es precioso!"
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">🧑</div>
+            <div>
+              <strong>Sofía M.</strong>
+              <!-- Cambiar texto aquí – nombre real del cliente -->
+              <span data-es="Ciudad de México" data-en="Mexico City">Ciudad de México</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card testimonial-card fade-in">
+          <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-card__text" data-es='"El bálsamo para patitas es un milagro. Mi border collie tenía las almohadillas muy agrietadas en invierno. En 2 semanas estaban perfectas."' data-en='"The paw balm is a miracle. My border collie had very cracked paw pads in winter. In 2 weeks they were perfect."'>
+            "El bálsamo para patitas es un milagro. Mi border collie tenía las almohadillas muy agrietadas en invierno. En 2 semanas estaban perfectas."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">👩</div>
+            <div>
+              <strong>Carlos R.</strong>
+              <!-- Cambiar texto aquí – nombre real del cliente -->
+              <span data-es="Guadalajara" data-en="Guadalajara">Guadalajara</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card testimonial-card fade-in">
+          <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonial-card__text" data-es='"Compré el kit completo y fue el mejor regalo para mi perra Luna. El perfume dura todo el día y además no ha tenido pulgas desde que lo usamos."' data-en='"I bought the full kit and it was the best gift for my dog Luna. The perfume lasts all day and she hasn\'t had fleas since we started using it."'>
+            "Compré el kit completo y fue el mejor regalo para mi perra Luna. El perfume dura todo el día y además no ha tenido pulgas desde que lo usamos."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">👱</div>
+            <div>
+              <strong>Valentina L.</strong>
+              <!-- Cambiar texto aquí – nombre real del cliente -->
+              <span data-es="Monterrey" data-en="Monterrey">Monterrey</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.testimonials -->
+
+
+  <!-- =============================================
+       GALERÍA – Photo gallery
+       ============================================= -->
+  <section class="section gallery" id="galeria" aria-label="Galería de imágenes">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <span class="section__label" data-es="Galería" data-en="Gallery">Galería</span>
+        <h2 class="section__title" data-es="El amor que nos mueve" data-en="The love that drives us">
+          El amor que nos mueve
+        </h2>
+      </div>
+
+      <div class="gallery__grid fade-in">
+
+        <div class="gallery__item gallery__item--large">
+          <!-- Reemplazar con /assets/images/gallery-1.jpg -->
+          <div class="image-placeholder image-placeholder--gallery" aria-label="Galería imagen 1">
+            <span class="image-placeholder__icon" aria-hidden="true">📸</span>
+            <span class="image-placeholder__label">gallery-1.jpg</span>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <!-- Reemplazar con /assets/images/gallery-2.jpg -->
+          <div class="image-placeholder image-placeholder--gallery" aria-label="Galería imagen 2">
+            <span class="image-placeholder__icon" aria-hidden="true">📸</span>
+            <span class="image-placeholder__label">gallery-2.jpg</span>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <!-- Reemplazar con /assets/images/gallery-3.jpg -->
+          <div class="image-placeholder image-placeholder--gallery" aria-label="Galería imagen 3">
+            <span class="image-placeholder__icon" aria-hidden="true">📸</span>
+            <span class="image-placeholder__label">gallery-3.jpg</span>
+          </div>
+        </div>
+
+      </div><!-- /.gallery__grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.gallery -->
+
+
+  <!-- =============================================
+       HISTORIA – Brand story
+       ============================================= -->
+  <section class="section section--light history" id="historia" aria-label="Historia de la marca">
+    <div class="container">
+      <div class="history__inner fade-in">
+        <span class="section__label" data-es="Nuestra Historia" data-en="Our Story">Nuestra Historia</span>
+        <h2 class="section__title section__title--centered" data-es="Un &ldquo;Puff&rdquo; de relajación, un &ldquo;Paw&rdquo; de protección" data-en='A "Puff" of relaxation, a "Paw" of protection'>
+          Un "Puff" de relajación, un "Paw" de protección
+        </h2>
+        <p class="history__text" data-es="Puff &amp; Paw nació de una observación sencilla: el mundo es un lugar muy rudo para los sentidos de un perro. Mientras nosotros disfrutamos de fragancias intensas y caminatas bajo el sol, el olfato de nuestros amigos peludos es miles de veces más sensible y sus almohadillas están en contacto directo con superficies extremas." data-en="Puff &amp; Paw was born from a simple observation: the world is a harsh place for a dog's senses. While we enjoy intense fragrances and sunny walks, our furry friends' sense of smell is thousands of times more sensitive and their paws are in direct contact with extreme surfaces.">
+          Puff &amp; Paw nació de una observación sencilla: el mundo es un lugar muy rudo para los sentidos de un perro. Mientras nosotros disfrutamos de fragancias intensas y caminatas bajo el sol, el olfato de nuestros amigos peludos es miles de veces más sensible y sus almohadillas están en contacto directo con superficies extremas.
+        </p>
+        <p class="history__text" data-es="Al darnos cuenta de que la mayoría de los productos de higiene canina priorizan el aroma artificial sobre la salud real, decidimos crear algo diferente. Nos sumergimos en botánica y aromaterapia, y así nació Puff &amp; Paw: una línea de cuidado honesta donde cada &ldquo;Puff&rdquo; es una dosis de relajación y cada &ldquo;Paw&rdquo; es un gesto de protección." data-en='When we realized most canine hygiene products prioritize artificial scents over real health, we decided to create something different. We dove into botany and aromatherapy, and Puff &amp; Paw was born: an honest care line where every "Puff" is a dose of relaxation and every "Paw" is a gesture of protection.'>
+          Al darnos cuenta de que la mayoría de los productos de higiene canina priorizan el aroma artificial sobre la salud real, decidimos crear algo diferente. Nos sumergimos en botánica y aromaterapia, y así nació Puff &amp; Paw: una línea de cuidado honesta donde cada "Puff" es una dosis de relajación y cada "Paw" es un gesto de protección.
+        </p>
+      </div>
+    </div>
+  </section><!-- /.history -->
+
+
+  <!-- =============================================
+       VALORES – Brand values
+       ============================================= -->
+  <section class="section values" id="valores" aria-label="Valores de la marca">
+    <div class="container">
+
+      <div class="section__header fade-in">
+        <span class="section__label" data-es="Nuestros Valores" data-en="Our Values">Nuestros Valores</span>
+        <h2 class="section__title" data-es="Lo que guía cada decisión" data-en="What guides every decision">
+          Lo que guía cada decisión
+        </h2>
+      </div>
+
+      <div class="grid grid--2 values__grid">
+
+        <div class="card value-card fade-in">
+          <span class="value-card__icon" aria-hidden="true">💚</span>
+          <h3 data-es="Bienestar Consciente" data-en="Conscious Wellness">Bienestar Consciente</h3>
+          <p data-es="Cada producto está diseñado pensando primero en la salud física y emocional del perro, respetando su sensibilidad natural." data-en="Every product is designed with the dog's physical and emotional health as the top priority, respecting their natural sensitivity.">Cada producto está diseñado pensando primero en la salud física y emocional del perro, respetando su sensibilidad natural.</p>
+        </div>
+
+        <div class="card value-card fade-in">
+          <span class="value-card__icon" aria-hidden="true">🌺</span>
+          <h3 data-es="Pureza Botánica" data-en="Botanical Purity">Pureza Botánica</h3>
+          <p data-es="Nos comprometemos a utilizar únicamente ingredientes naturales y de alta calidad, rechazando químicos agresivos y fragancias sintéticas." data-en="We are committed to using only high-quality, natural ingredients, rejecting harsh chemicals and synthetic fragrances.">Nos comprometemos a utilizar únicamente ingredientes naturales y de alta calidad, rechazando químicos agresivos y fragancias sintéticas.</p>
+        </div>
+
+        <div class="card value-card fade-in">
+          <span class="value-card__icon" aria-hidden="true">🔍</span>
+          <h3 data-es="Transparencia Total" data-en="Total Transparency">Transparencia Total</h3>
+          <p data-es="Creemos en la honestidad sobre lo que contienen nuestros productos. Si no es seguro para ser lamido, no está en nuestra lista." data-en="We believe in being honest about what's inside our products. If it's not safe to be licked, it's not on our ingredient list.">Creemos en la honestidad sobre lo que contienen nuestros productos. Si no es seguro para ser lamido, no está en nuestra lista.</p>
+        </div>
+
+        <div class="card value-card fade-in">
+          <span class="value-card__icon" aria-hidden="true">🌍</span>
+          <h3 data-es="Respeto por la Naturaleza" data-en="Respect for Nature">Respeto por la Naturaleza</h3>
+          <p data-es="Cuidamos el planeta que nuestros perros aman explorar, utilizando empaques sostenibles y procesos libres de crueldad." data-en="We take care of the planet that our dogs love to explore by using sustainable packaging and cruelty-free processes.">Cuidamos el planeta que nuestros perros aman explorar, utilizando empaques sostenibles y procesos libres de crueldad.</p>
+        </div>
+
+      </div><!-- /.grid -->
+
+    </div><!-- /.container -->
+  </section><!-- /.values -->
+
+
+  <!-- =============================================
+       MERCADO OBJETIVO – Target market
+       ============================================= -->
+  <section class="section section--alt market" id="mercado" aria-label="Mercado objetivo">
+    <div class="container">
+      <div class="market__inner fade-in">
+        <span class="section__label" data-es="¿Para quién?" data-en="Who is it for?">¿Para quién?</span>
+        <h2 class="section__title section__title--centered" data-es="Para los que aman como familia" data-en="For those who love like family">
+          Para los que aman como familia
+        </h2>
+        <p class="market__text" data-es="Nuestros productos están dirigidos a jóvenes y adultos entre 18 y 40 años que consideran a sus mascotas parte de la familia. Personas que buscan innovación, calidad natural y experiencias conscientes para sus compañeros de vida. Si buscas lo mejor para tu perro sin comprometer su salud ni la del planeta, Puff &amp; Paw es para ti." data-en="Our products are designed for young adults between 18 and 40 who consider their pets part of the family. People looking for innovation, natural quality, and conscious experiences for their life companions. If you seek the best for your dog without compromising their health or the planet's, Puff &amp; Paw is for you.">
+          Nuestros productos están dirigidos a jóvenes y adultos entre 18 y 40 años que consideran a sus mascotas parte de la familia. Personas que buscan innovación, calidad natural y experiencias conscientes para sus compañeros de vida. Si buscas lo mejor para tu perro sin comprometer su salud ni la del planeta, Puff &amp; Paw es para ti.
+        </p>
+        <div class="market__tags">
+          <span class="market__tag" data-es="🐕 Amantes de mascotas" data-en="🐕 Pet lovers">🐕 Amantes de mascotas</span>
+          <span class="market__tag" data-es="🌿 Consumo consciente" data-en="🌿 Conscious consumption">🌿 Consumo consciente</span>
+          <span class="market__tag" data-es="✨ Estilo de vida natural" data-en="✨ Natural lifestyle">✨ Estilo de vida natural</span>
+          <span class="market__tag" data-es="🎁 Regalos con propósito" data-en="🎁 Purposeful gifts">🎁 Regalos con propósito</span>
+        </div>
+      </div>
+    </div>
+  </section><!-- /.market -->
+
+
+  <!-- =============================================
+       CTA FINAL – Call to action section
+       ============================================= -->
+  <section class="section cta-final" id="contacto" aria-label="Llamada a la acción final">
+    <div class="container">
+      <div class="cta-final__inner fade-in">
+        <span class="cta-final__emoji" aria-hidden="true">🐾</span>
+        <h2 class="cta-final__title" data-es="Dale lo mejor a tu mejor amigo" data-en="Give the best to your best friend">
+          Dale lo mejor a tu mejor amigo
+        </h2>
+        <p class="cta-final__text" data-es="Únete a la familia Puff &amp; Paw. Natural, consciente, lleno de amor." data-en="Join the Puff &amp; Paw family. Natural, conscious, full of love.">
+          Únete a la familia Puff &amp; Paw. Natural, consciente, lleno de amor.
+        </p>
+        <div class="cta-final__buttons">
+          <a href="#productos" class="btn btn--primary btn--large" data-es="Ver productos" data-en="View products">Ver productos</a>
+          <a href="mailto:hola@puffandpaw.mx" class="btn btn--secondary btn--large" data-es="Contáctanos" data-en="Contact us">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- /.cta-final -->
+
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <!-- Logo y descripción -->
+      <div class="footer__brand">
+        <span class="footer__logo-text">Puff <span>&</span> Paw</span>
+        <p data-es="Cosmética botánica natural para el bienestar real de tu perro. Cada producto, elaborado con amor y transparencia." data-en="Natural botanical cosmetics for your dog's real wellness. Every product, crafted with love and transparency.">
+          Cosmética botánica natural para el bienestar real de tu perro. Cada producto, elaborado con amor y transparencia.
+        </p>
+        <!-- Redes sociales – Cambiar hrefs con URLs reales -->
+        <div class="footer__social" aria-label="Redes sociales">
+          <a href="#" class="footer__social-link" aria-label="Instagram Puff & Paw">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Facebook Puff & Paw">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok Puff & Paw">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.19 8.19 0 0 0 4.79 1.53V6.77a4.85 4.85 0 0 1-1.02-.08z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="footer__links">
+        <h4 data-es="Productos" data-en="Products">Productos</h4>
+        <ul>
+          <li><a href="#productos" data-es="Perfume Canino" data-en="Canine Perfume">Perfume Canino</a></li>
+          <li><a href="#productos" data-es="Bálsamo Patitas" data-en="Paw Balm">Bálsamo Patitas</a></li>
+          <li><a href="#productos" data-es="Kit Bienestar" data-en="Wellness Kit">Kit Bienestar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4 data-es="Empresa" data-en="Company">Empresa</h4>
+        <ul>
+          <li><a href="#sobre" data-es="Sobre nosotros" data-en="About us">Sobre nosotros</a></li>
+          <li><a href="#historia" data-es="Historia" data-en="History">Historia</a></li>
+          <li><a href="#valores" data-es="Valores" data-en="Values">Valores</a></li>
+          <li><a href="#ingredientes" data-es="Ingredientes" data-en="Ingredients">Ingredientes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+        <ul>
+          <!-- Cambiar texto aquí – poner email y teléfono reales -->
+          <li><a href="mailto:hola@puffandpaw.mx">hola@puffandpaw.mx</a></li>
+          <li><a href="tel:+526641234567">+52 664 123 4567</a></li>
+          <li><span data-es="Tijuana, Baja California" data-en="Tijuana, Baja California">Tijuana, Baja California</span></li>
+        </ul>
+      </div>
+
+    </div><!-- /.footer__inner -->
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-es="© 2025 Puff &amp; Paw. Todos los derechos reservados. Hecho con 🐾 en México." data-en="© 2025 Puff &amp; Paw. All rights reserved. Made with 🐾 in Mexico.">
+          © 2025 Puff &amp; Paw. Todos los derechos reservados. Hecho con 🐾 en México.
+        </p>
+      </div>
+    </div>
+
+  </footer><!-- /.footer -->
+
+
+  <!-- =============================================
+       MODAL DE COMPRA
+       Oculto por defecto, se activa con JS
+       ============================================= -->
+  <div class="modal" id="purchase-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-name" aria-hidden="true">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modal-close-btn" aria-label="Cerrar modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal__header">
+        <span class="modal__emoji" aria-hidden="true">🐾</span>
+        <h3 class="modal__title" data-es="Confirmar pedido" data-en="Confirm order">Confirmar pedido</h3>
+      </div>
+      <div class="modal__body">
+        <p class="modal__product-name" id="modal-product-name"><!-- JS inserta nombre aquí --></p>
+        <p class="modal__price" id="modal-product-price"><!-- JS inserta precio aquí --></p>
+        <!-- Mensaje de éxito (oculto por defecto) -->
+        <div class="modal__success" id="modal-success" aria-live="polite" hidden>
+          <span class="modal__success-icon" aria-hidden="true">✅</span>
+          <p data-es="¡Pedido recibido! Nos pondremos en contacto muy pronto. 🐾" data-en="Order received! We'll be in touch very soon. 🐾">¡Pedido recibido! Nos pondremos en contacto muy pronto. 🐾</p>
+        </div>
+      </div>
+      <div class="modal__footer" id="modal-footer">
+        <button class="btn btn--secondary" id="modal-cancel-btn" data-es="Cancelar" data-en="Cancel">Cancelar</button>
+        <button class="btn btn--primary" id="modal-confirm-btn" data-es="Confirmar compra" data-en="Confirm purchase">Confirmar compra</button>
+      </div>
+    </div>
+  </div><!-- /.modal -->
+
+
+  <!-- =============================================
+       JAVASCRIPT PRINCIPAL
+       ============================================= -->
+  <script src="main.js"></script>
+
+</body>
+</html>
