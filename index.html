@@ -11,12 +11,12 @@
 
   <!-- =============================================
        GOOGLE FONTS
-       Playfair Display → títulos
-       Inter → cuerpo de texto
+       Cormorant Garamond → títulos
+       DM Sans → cuerpo de texto
        ============================================= -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- =============================================
        ESTILOS PRINCIPALES
@@ -46,10 +46,7 @@
 
       <!-- Logo -->
       <a href="#inicio" class="navbar__logo" aria-label="Puff & Paw – Inicio">
-        <!-- Reemplazar con /assets/images/logo.png -->
-        <div class="image-placeholder image-placeholder--logo" aria-hidden="true">
-          <span class="navbar__logo-text">Puff <span>&</span> Paw</span>
-        </div>
+        <img src="assets/images/logo.png" alt="Puff & Paw Logo" class="navbar__logo-img" />
       </a>
 
       <!-- Nav links – desktop -->
@@ -125,11 +122,7 @@
       <!-- Columna imagen -->
       <div class="hero__visual fade-in">
         <div class="hero__image-wrap">
-          <!-- Reemplazar con /assets/images/hero-main.jpg -->
-          <div class="image-placeholder image-placeholder--hero" aria-label="Imagen principal hero – perro feliz con productos Puff & Paw">
-            <span class="image-placeholder__icon" aria-hidden="true">🐶</span>
-            <span class="image-placeholder__label">hero-main.jpg</span>
-          </div>
+          <img src="assets/images/logo.png" alt="Productos Puff & Paw - Perfume y Bálsamo Natural" class="hero__image" />
           <!-- Decoración flotante -->
           <div class="hero__badge-float hero__badge-float--1" aria-hidden="true">
             <span>✨</span>
@@ -165,11 +158,7 @@
         <!-- Imagen -->
         <div class="about__image-col fade-in">
           <div class="about__image-wrap">
-            <!-- Reemplazar con /assets/images/section-about.jpg -->
-            <div class="image-placeholder image-placeholder--about" aria-label="Imagen sobre la marca Puff & Paw">
-              <span class="image-placeholder__icon" aria-hidden="true">🌿</span>
-              <span class="image-placeholder__label">section-about.jpg</span>
-            </div>
+            <img src="assets/images/kit.jpeg" alt="Productos naturales Puff & Paw" class="about__image" />
           </div>
           <!-- Tarjeta misión flotante -->
           <div class="about__mission-card fade-in">
@@ -246,11 +235,7 @@
         <!-- Producto 1: Perfume -->
         <article class="card product-card fade-in" aria-label="Perfume Canino Triple Acción">
           <div class="card__image-wrap">
-            <!-- Reemplazar con /assets/images/product-perfume.jpg -->
-            <div class="image-placeholder image-placeholder--product" aria-label="Perfume Canino Triple Acción">
-              <span class="image-placeholder__icon" aria-hidden="true">🌸</span>
-              <span class="image-placeholder__label">product-perfume.jpg</span>
-            </div>
+            <img src="assets/images/perfume.jpeg" alt="Perfume Canino Triple Acción" class="product-card__image" />
             <span class="product-card__badge" data-es="Más vendido" data-en="Best seller">Más vendido</span>
           </div>
           <div class="card__body">
@@ -281,11 +266,7 @@
         <!-- Producto 2: Bálsamo -->
         <article class="card product-card fade-in" aria-label="Bálsamo Protector Patitas Suaves">
           <div class="card__image-wrap">
-            <!-- Reemplazar con /assets/images/product-balm.jpg -->
-            <div class="image-placeholder image-placeholder--product" aria-label="Bálsamo Protector Patitas Suaves">
-              <span class="image-placeholder__icon" aria-hidden="true">🐾</span>
-              <span class="image-placeholder__label">product-balm.jpg</span>
-            </div>
+            <img src="assets/images/balsamo.jpeg" alt='Bálsamo "Patitas Suaves"' class="product-card__image" />
           </div>
           <div class="card__body">
             <span class="product-card__category" data-es="Hidratación · 30g" data-en="Hydration · 30g">Hidratación · 30g</span>
@@ -315,11 +296,7 @@
         <!-- Producto 3: Kit -->
         <article class="card product-card fade-in" aria-label="Kit Bienestar Completo">
           <div class="card__image-wrap">
-            <!-- Reemplazar con /assets/images/product-kit.jpg -->
-            <div class="image-placeholder image-placeholder--product" aria-label="Kit Bienestar Completo Puff & Paw">
-              <span class="image-placeholder__icon" aria-hidden="true">🎁</span>
-              <span class="image-placeholder__label">product-kit.jpg</span>
-            </div>
+            <img src="assets/images/kit2.jpeg" alt="Kit Bienestar Completo Puff & Paw" class="product-card__image" />
             <span class="product-card__badge product-card__badge--green" data-es="Ahorra 15%" data-en="Save 15%">Ahorra 15%</span>
           </div>
           <div class="card__body">
@@ -367,11 +344,7 @@
         <!-- Imagen -->
         <div class="benefits__image-col fade-in">
           <div class="benefits__image-wrap">
-            <!-- Reemplazar con /assets/images/section-benefits.jpg -->
-            <div class="image-placeholder image-placeholder--benefits" aria-label="Beneficios de los productos Puff & Paw">
-              <span class="image-placeholder__icon" aria-hidden="true">🌸</span>
-              <span class="image-placeholder__label">section-benefits.jpg</span>
-            </div>
+            <img src="assets/images/bolsa.jpeg" alt="Beneficios de los productos Puff & Paw" class="benefits__image" />
           </div>
         </div>
 
@@ -601,7 +574,6 @@
             <div class="testimonial-card__avatar" aria-hidden="true">🧑</div>
             <div>
               <strong>Sofía M.</strong>
-              <!-- Cambiar texto aquí – nombre real del cliente -->
               <span data-es="Ciudad de México" data-en="Mexico City">Ciudad de México</span>
             </div>
           </div>
@@ -616,7 +588,6 @@
             <div class="testimonial-card__avatar" aria-hidden="true">👩</div>
             <div>
               <strong>Carlos R.</strong>
-              <!-- Cambiar texto aquí – nombre real del cliente -->
               <span data-es="Guadalajara" data-en="Guadalajara">Guadalajara</span>
             </div>
           </div>
@@ -631,7 +602,6 @@
             <div class="testimonial-card__avatar" aria-hidden="true">👱</div>
             <div>
               <strong>Valentina L.</strong>
-              <!-- Cambiar texto aquí – nombre real del cliente -->
               <span data-es="Monterrey" data-en="Monterrey">Monterrey</span>
             </div>
           </div>
@@ -644,49 +614,50 @@
 
 
   <!-- =============================================
-       GALERÍA – Photo gallery
-       ============================================= -->
-  <section class="section gallery" id="galeria" aria-label="Galería de imágenes">
-    <div class="container">
+     GALERÍA – Photo gallery (5 imágenes)
+     Layout: 1 grande + 4 medianas en cuadrícula
+     ============================================= -->
+<section class="section gallery" id="galeria" aria-label="Galería de imágenes">
+  <div class="container">
 
-      <div class="section__header fade-in">
-        <span class="section__label" data-es="Galería" data-en="Gallery">Galería</span>
-        <h2 class="section__title" data-es="El amor que nos mueve" data-en="The love that drives us">
-          El amor que nos mueve
-        </h2>
+    <div class="section__header fade-in">
+      <span class="section__label" data-es="Galería" data-en="Gallery">Galería</span>
+      <h2 class="section__title" data-es="El amor que nos mueve" data-en="The love that drives us">
+        El amor que nos mueve
+      </h2>
+    </div>
+
+    <div class="gallery__grid fade-in">
+
+      <!-- Imagen 1: Grande (izquierda, ocupa 2 filas) -->
+      <div class="gallery__item gallery__item--large">
+        <img src="assets/images/perro3.jpeg" alt="Perro feliz usando productos Puff & Paw" class="gallery__image" />
       </div>
 
-      <div class="gallery__grid fade-in">
+      <!-- Imagen 2: Mediana (arriba derecha) -->
+      <div class="gallery__item">
+        <img src="assets/images/perro2.jpeg" alt="Cliente satisfecho con perfume canino" class="gallery__image" />
+      </div>
 
-        <div class="gallery__item gallery__item--large">
-          <!-- Reemplazar con /assets/images/gallery-1.jpg -->
-          <div class="image-placeholder image-placeholder--gallery" aria-label="Galería imagen 1">
-            <span class="image-placeholder__icon" aria-hidden="true">📸</span>
-            <span class="image-placeholder__label">gallery-1.jpg</span>
-          </div>
-        </div>
+      <!-- Imagen 3: Mediana (centro derecha) -->
+      <div class="gallery__item">
+        <img src="assets/images/perro1.jpeg" alt="Perro usando bálsamo para patitas" class="gallery__image" />
+      </div>
 
-        <div class="gallery__item">
-          <!-- Reemplazar con /assets/images/gallery-2.jpg -->
-          <div class="image-placeholder image-placeholder--gallery" aria-label="Galería imagen 2">
-            <span class="image-placeholder__icon" aria-hidden="true">📸</span>
-            <span class="image-placeholder__label">gallery-2.jpg</span>
-          </div>
-        </div>
+      <!-- Imagen 4: Mediana (abajo izquierda) -->
+      <div class="gallery__item">
+        <img src="assets/images/perro4.jpeg" alt="Momentos Puff & Paw" class="gallery__image" />
+      </div>
 
-        <div class="gallery__item">
-          <!-- Reemplazar con /assets/images/gallery-3.jpg -->
-          <div class="image-placeholder image-placeholder--gallery" aria-label="Galería imagen 3">
-            <span class="image-placeholder__icon" aria-hidden="true">📸</span>
-            <span class="image-placeholder__label">gallery-3.jpg</span>
-          </div>
-        </div>
+      <!-- Imagen 5: Mediana (abajo derecha) -->
+      <div class="gallery__item">
+        <img src="assets/images/perro5.jpeg" alt="Familia Puff & Paw" class="gallery__image" />
+      </div>
 
-      </div><!-- /.gallery__grid -->
+    </div><!-- /.gallery__grid -->
 
-    </div><!-- /.container -->
-  </section><!-- /.gallery -->
-
+  </div><!-- /.container -->
+</section><!-- /.gallery -->
 
   <!-- =============================================
        HISTORIA – Brand story
@@ -849,7 +820,6 @@
       <div class="footer__links">
         <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
         <ul>
-          <!-- Cambiar texto aquí – poner email y teléfono reales -->
           <li><a href="mailto:hola@puffandpaw.mx">hola@puffandpaw.mx</a></li>
           <li><a href="tel:+526641234567">+52 664 123 4567</a></li>
           <li><span data-es="Tijuana, Baja California" data-en="Tijuana, Baja California">Tijuana, Baja California</span></li>
