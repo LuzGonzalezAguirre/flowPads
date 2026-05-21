@@ -616,8 +616,8 @@ button {
 
 /* Badges flotantes sobre la imagen */
 .hero__badge-float {
+  display: none;
   position: absolute;
-  display: flex;
   align-items: center;
   gap: 6px;
   background: var(--color-white);
@@ -1725,6 +1725,11 @@ button {
   /* Logo más grande en desktop */
   .navbar__logo-img {
     height: 56px;
+  }
+
+  /* Badges flotantes visibles solo en desktop */
+  .hero__badge-float {
+    display: flex;
   }
 
   /* About – imagen derecha en desktop */
