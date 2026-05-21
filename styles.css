@@ -79,6 +79,8 @@
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* CAMBIO: evitar scroll horizontal */
+  width: 100%; /* CAMBIO: ancho fijo */
 }
 
 body {
@@ -88,6 +90,8 @@ body {
   background-color: var(--color-background);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%; /* CAMBIO: ancho fijo */
+  position: relative; /* CAMBIO: contexto de posicionamiento */
 }
 
 img {
@@ -122,6 +126,8 @@ button {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-2); /* mobile: 16px */
+  position: relative; /* CAMBIO: contexto de posicionamiento */
+  overflow: hidden; /* CAMBIO: contener elementos que sobresalen */
 }
 
 /* Sección base */
@@ -529,7 +535,7 @@ button {
   padding-top: var(--space-8);
   padding-bottom: 0;
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* CAMBIO: evita cortar elementos flotantes */
 }
 
 .hero__inner {
@@ -608,16 +614,19 @@ button {
 /* Imagen del hero */
 .hero__visual {
   position: relative;
+  width: 100%; /* CAMBIO: fuerza ancho completo */
 }
 
 .hero__image-wrap {
   position: relative;
-  overflow: hidden;
-  height: 300px;
+  overflow: visible; /* CAMBIO: permite que badges flotantes se vean */
+  height: auto; /* CAMBIO: altura automática en mobile */
+  min-height: 280px; /* CAMBIO: altura mínima en mobile */
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--space-2); /* CAMBIO: padding para contener badges */
 }
 
 /* Badges flotantes sobre la imagen */
@@ -634,17 +643,19 @@ button {
   font-weight: 600;
   color: var(--color-text);
   animation: float 3s ease-in-out infinite;
+  white-space: nowrap; /* CAMBIO: evitar que el texto se rompa */
+  z-index: 2; /* CAMBIO: asegurar que estén arriba */
 }
 
 .hero__badge-float--1 {
   top: 16px;
-  left: -16px;
+  left: 8px; /* CAMBIO: valor positivo para mobile */
   animation-delay: 0s;
 }
 
 .hero__badge-float--2 {
   bottom: 32px;
-  right: -8px;
+  right: 8px; /* CAMBIO: valor positivo para mobile */
   animation-delay: 1.5s;
 }
 
@@ -662,11 +673,16 @@ button {
 .hero__wave {
   margin-top: var(--space-6);
   line-height: 0;
+  position: relative; /* CAMBIO: posicionamiento relativo */
+  z-index: 1; /* CAMBIO: asegurar que esté arriba */
+  width: 100%; /* CAMBIO: ancho completo */
 }
 
 .hero__wave svg {
   width: 100%;
   height: 60px;
+  display: block; /* CAMBIO: eliminar espacio debajo del SVG */
+  vertical-align: bottom; /* CAMBIO: alineación inferior */
 }
 
 /* =============================================
@@ -1738,10 +1754,25 @@ button {
     display: flex;
   }
 
+  /* Restaurar posiciones negativas en desktop */
+  .hero__badge-float--1 {
+    left: -16px; /* posición negativa segura en desktop */
+  }
+
+  .hero__badge-float--2 {
+    right: -8px; /* posición negativa segura en desktop */
+  }
+
+  /* Permitir overflow en desktop para badges flotantes */
+  .hero .container {
+    overflow: visible;
+  }
+
   /* Hero image en desktop */
   .hero__image-wrap {
     height: auto;
     display: block;
+    overflow: visible; /* permitir badges flotantes fuera del contenedor */
   }
 
   .hero__image {
