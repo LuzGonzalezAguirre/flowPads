@@ -612,6 +612,12 @@ button {
 
 .hero__image-wrap {
   position: relative;
+  overflow: hidden;
+  height: 300px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Badges flotantes sobre la imagen */
@@ -1732,9 +1738,15 @@ button {
     display: flex;
   }
 
-  /* Hero image con altura fija en desktop */
+  /* Hero image en desktop */
+  .hero__image-wrap {
+    height: auto;
+    display: block;
+  }
+
   .hero__image {
-    height: 480px;
+    width: 100%;
+    height: auto;
     object-fit: contain;
   }
 
@@ -1800,8 +1812,10 @@ button {
 
 /* Imagen hero */
 .hero__image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
   display: block;
   border-radius: var(--radius-lg);
 }
